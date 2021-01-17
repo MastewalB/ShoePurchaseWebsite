@@ -11,7 +11,7 @@
             integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
-<body style="background: url('assets/images/shoes-together.jpg');">
+<body>
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
             <a class="navbar-brand" href="index.html">AdShoe</a>
@@ -49,27 +49,50 @@
         </nav>
 
 
-<div class="container" style="height: 100vh; margin-top: 30px; padding: 10px">
-            <div class="container form-container">
-                <h3>Create Your Account</h3>
-                <hr>
-                <form action="">
-                    
-                    
-                	
-                    <div class="form-group">
-                            <label for="username">Username</label>
-                            <input class="form-control" type="username" name="username" id="username">
-                        </div>
-                	<div class="form-group">
-                        <label for="pass">Password </label>
-                        <input class="form-control" type="password" name="pass" id="pass">
-                    </div>
-                	
-                    <button type="submit" class="btn btn-primary btn-lg btn-block">LOGIN</button>
-            </form>
-            </div>
 
+        <div class="container-fluid">
+            <div class="row" style="padding: 20px;">
+                <div class="col col-sm-5">
+                    <div class="gmap_canvas">
+                        <div style="text-decoration:none; overflow:hidden;max-width:100%;width:600px;height:500px;">
+                            <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7880.586944969619!2d38.76095225167845!3d9.03697135124643!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8f642ba9e021%3A0x2321687a606863f3!2sAddis%20Ababa%20Institute%20of%20Technology!5e0!3m2!1sen!2sus!4v1610847952118!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="false" aria-hidden="false" tabindex="0"></iframe>
+
+                            </div>
+
+                            <a class="googlemap-code" href="https://www.embed-map.com"
+                                id="enablemaps-data">https://www.embed-map.com</a>
+                            <!--<style>
+                                #embedmap-canvas img {
+                                    max-height: none;
+                                    max-width: none !important;
+                                    background: none !important;
+                                }
+                            </style>-->
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col-sm-7 pt-4">
+                    <div class="container form-container" style="background: url('https://images.unsplash.com/photo-1465479423260-c4afc24172c6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzB8fHNob2VzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
+                        <h3>Contact Us</h3>
+                        <hr>
+                        <form action="">
+                            <div class="form-group">
+                                <label for="fname">Your Email</label>
+                                <input class="form-control" type="email" name="fname" id="fname">
+                            </div>
+                            <div class="form-group">
+                                <label for="msg">Your Message</label>
+                                <textarea class="form-control" type="textarea" name="msg" id="pass"> </textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg mb-2">Submit</button>
+                    </div>
+
+                </div>
+                </form>
+            </div>
         </div>
 
 
